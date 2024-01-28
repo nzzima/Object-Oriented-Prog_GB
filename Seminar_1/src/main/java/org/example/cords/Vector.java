@@ -65,4 +65,17 @@ public class Vector {
     public double scalarProduct(Vector vectOTwo) {
         return (x * vectOTwo.getX() + y * vectOTwo.getY() + z * vectOTwo.getZ());
     }
+
+    /**
+     * Метод, вычисляющий векторное произведение
+     * @param vectTwo Вектор, с которым происходит произведение
+     * @return Результат
+     */
+    public Vector vectMultiply(Vector vectTwo) {
+        return new Vector(
+                y * vectTwo.z - z * vectTwo.y,
+                z * vectTwo.x - x * vectTwo.z,
+                x * vectTwo.y - y * vectTwo.x
+        );
+    }
 }

@@ -41,4 +41,13 @@ public class Cat {
             System.out.println("Введенный возраст некорректен! ");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
