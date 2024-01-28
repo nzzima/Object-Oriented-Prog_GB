@@ -9,5 +9,6 @@ public class Main {
         System.out.println("vectOne.length() = " + vectOne.length());
         System.out.println("vectOne.scalarProduct(vectOTwo) = " + vectOne.scalarProduct(vectTwo));
         System.out.println("vectOne.vectMultiply(vectTwo) = " + vectOne.vectMultiply(vectTwo));
+        System.out.println("vectOne.cos(vectTwo) = " + vectOne.cos(vectTwo));
     }
 }

@@ -78,4 +78,13 @@ public class Vector {
                 x * vectTwo.y - y * vectTwo.x
         );
     }
+
+    /**
+     * Метод, вычисляющий косинус угла между векторами
+     * @param vectTwo Второй вектор, с которым вычисляется косинус
+     * @return Результат
+     */
+    public double cos(Vector vectTwo) {
+        return scalarProduct(vectTwo) / length() * vectTwo.length();
+    }
 }
