@@ -1,12 +1,12 @@
 package org.example;
 
-public class Cat {
-    private String name;
+public class Cat extends Animal{
+
     private String color;
     private Integer age;
 
     public Cat(String name, String color, Integer age) {
-        this.name = name;
+        super(name);  //Из родительского класса Animal
         this.color = color;
         this.age = age;
     }
@@ -14,24 +14,16 @@ public class Cat {
     public Cat() {
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public Integer getAge() {
         return age;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public void setAge(Integer age) {
@@ -43,11 +35,27 @@ public class Cat {
     }
 
     @Override
+    protected void voice() {
+        System.out.println(toString() + " Meow");
+    }
+
+    @Override
+    protected void animalInfo() {
+        super.animalInfo();
+    }
+
+    @Override
+    protected void jump() {
+        super.jump();
+    }
+
+    @Override
     public String toString() {
         return "Cat{" +
-                "name='" + name + '\'' +
+                "name='" + super.getName() + '\'' +
                 ", color='" + color + '\'' +
                 ", age=" + age +
                 '}';
     }
+
 }
