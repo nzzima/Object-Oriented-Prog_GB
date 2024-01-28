@@ -56,4 +56,13 @@ public class Vector {
     public double length() {
         return Math.sqrt(x*x + y*y + z*z);
     }
+
+    /**
+     * @apiNote Метод, вычисляющий скалярное произведение
+     * @param vectOTwo Второй вектор, с которым происходит умножение
+     * @return Скалярное произведение
+     */
+    public double scalarProduct(Vector vectOTwo) {
+        return (x * vectOTwo.getX() + y * vectOTwo.getY() + z * vectOTwo.getZ());
+    }
 }
