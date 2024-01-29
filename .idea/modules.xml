@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Object-Oriented ProgGB.iml" filepath="$PROJECT_DIR$/.idea/Object-Oriented ProgGB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Object-Oriented Programming.iml" filepath="$PROJECT_DIR$/Object-Oriented Programming.iml" />
     </modules>
   </component>
 </project>
