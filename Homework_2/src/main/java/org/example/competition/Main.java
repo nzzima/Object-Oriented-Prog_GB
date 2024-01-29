@@ -34,6 +34,5 @@ public class Main {
             if (check)
                 System.out.println(participant + " успешно преодолел все препятствия\n");
         }
-
     }
 }
