@@ -15,8 +15,8 @@ public class Calculator {
      */
     public double sum(List<? extends Number> numbers) {
         double result = 0;
-        for (int i = 0; i < numbers.size(); i++) {
-            result += numbers.get(i).doubleValue();
+        for (Number number : numbers) {
+            result += number.doubleValue();
         }
         return result;
     }
