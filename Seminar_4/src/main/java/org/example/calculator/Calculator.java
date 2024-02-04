@@ -9,9 +9,9 @@ public class Calculator {
 
 
     /**
-     * Обобщенный метод суммы
+     * Обобщенный метод суммирования чисел
      * @param numbers Список чисел
-     * @return Сумма - результат
+     * @return Результат
      */
     public double sum(List<? extends Number> numbers) {
         double result = 0;
