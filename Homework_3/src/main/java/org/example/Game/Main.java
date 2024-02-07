@@ -1,6 +1,5 @@
 package org.example.Game;
 
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
