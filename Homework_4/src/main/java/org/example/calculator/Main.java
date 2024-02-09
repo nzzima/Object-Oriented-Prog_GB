@@ -26,7 +26,19 @@ public class Main {
         List<Double> array6 = new ArrayList<>(Arrays.asList(3.2, 15.5));
         System.out.println("calculator.multiply(array6) = " + calculator.division(array6));
 
-        List<Double> array7 = new ArrayList<>(Arrays.asList(0.0, 15.5));
-        System.out.println("calculator.multiply(array7) = " + calculator.division(array7));
+        List<Integer> number1 = new ArrayList<>(List.of(18));
+        System.out.println("calculator.toBinary(number1) = " + calculator.toBinary(number1));
+
+        List<Double> number2 = new ArrayList<>(List.of(9.4));
+        System.out.println("calculator.toBinary(number2) = " + calculator.toBinary(number2));
+
+        String number3 = "17";
+        System.out.println("calculator.toBinary(number3) = " + calculator.toBinary(number3));
+
+        String number4 = "9.7";
+        System.out.println("calculator.toBinary(number4) = " + calculator.toBinary(number4));
+
+        String number5 = "5.0";
+        System.out.println("calculator.toBinary(number5) = " + calculator.toBinary(number5));
     }
 }
