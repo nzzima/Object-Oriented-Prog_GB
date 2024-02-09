@@ -44,6 +44,11 @@ public class Calculator {
         return result;
     }
 
+    /**
+     * Метод для преобразования десятичного числа формата String в двоичный
+     * @param number Число формата String
+     * @return Результат
+     */
     public String toBinary(String number) {
         if (number.contains(".")) {
             double value = Double.parseDouble(number);
@@ -59,6 +64,11 @@ public class Calculator {
         }
     }
 
+    /**
+     * Обобщенный метод для преобразования десятичного числа в двоичный
+     * @param number Число
+     * @return Результат
+     */
     public String toBinary(List<? extends Number> number) {
         String result = "";
         int wholePart = number.get(0).intValue();
@@ -72,6 +82,11 @@ public class Calculator {
         return result;
     }
 
+    /**
+     * Метод для преобразования дробной части десятичного числа в двоичный
+     * @param num Дробная часть числа
+     * @return Результат
+     */
     private String fractionalToBinary(double num) {
         StringBuilder binary = new StringBuilder();
         while (num > 0 && binary.length() < 10) {
