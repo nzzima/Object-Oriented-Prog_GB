@@ -28,15 +28,15 @@ public class Controller {
         User user3 = new Student("Елизавета", "Круглова", 21, 4.9);
         User user4 = new Student("Екатерина", "Соколова", 21, 5.0);
         User user5 = new Student("Петр", "Румянин", 22, 3.8);
+        User user6 = new Teacher("Вячеслав", "Садовников", 43, "Математика");
 
-        User user12 = new Teacher("Вячеслав", "Садовников", 43, "Математика");
         createStudent(user1);
         createStudent(user2);
         createStudent(user3);
         createStudent(user4);
         createStudent(user5);
 
-        Teacher teacher = createTeacher(user12);
+        Teacher teacher = createTeacher(user6);
 
         List<Student> studentList = dataStudentService.read();
         List<Teacher> teacherList = dataTeacherService.read();
