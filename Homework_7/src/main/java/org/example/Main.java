@@ -1,5 +1,6 @@
-package org.example.controller;
+package org.example;
 
+import org.example.controller.Controller;
 import org.example.service.ConsoleLogger;
 import org.example.service.LogCalculatorFactory;
 

@@ -49,6 +49,12 @@ public class Controller {
                 default:
                     throw new RuntimeException("Не верная операция!");
             }
+
+            System.out.print("\n1 --- Продолжить\n2 --- Остановить калькулятор\nВвод: ");
+            String choice = scanner.nextLine();
+            if (choice.equals("1")) {
+            }
+            else break;
         }
     }
 
